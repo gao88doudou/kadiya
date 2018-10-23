@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	卡地亚</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+	  .header{
+	  	width: 100%;
+	  	height: 24px;
+	  	background-color: white;
+	  }		
+	  .wrap{
+	  	margin: 0 auto;
+	  	width: 1050px;	  	
+	  }
+	  .header-logo{
+	  	width: 215px;
+	  	height: 70px;
+	  	background: url(images/kadiya.png);
+	  	margin: 0 auto;
+	  	background-repeat: no-repeat;
+	  }
+	  .banner-1{
+		background: url(images/shou2.png);
+		width: 1050px;
+		height: 463px;
+		margin: 0 auto;
+	}
+	.box1 {
+       width:1050px;
+       height: 54px;
+       margin-top: 50px;    
+	}
+	.nav::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.nav > li {
+		float: left;
+		width: 110px;
+		
+		line-height: 3em;
+	}
+	.nav > li > a::after {
+		content:"";
+		display: block;		
+		background-color: #b4a078;
+		width: 2em;
+		margin: 0 auto;
+		position: relative;
+		top: 0em;
+		display: none;
+	}
+	.nav > li:hover > a {
+		color: #b4a078;
+	}	
+	.nav > li:hover > .sub-nav{
+		display: block;
+	}
+	.sub-nav > ul {
+		float: left;
+		margin-left: 300px;
+	}
+
+	.sub-nav>div{
+		float: left;
+	}
+	.sub-nav>div.sub-right{
+		width: 799px;
+		padding-right: 150px;
+		background-color: #f5e5ec;
+	}
+	.sub-nav>.sub-right>ul{
+		float: left;
+		width: 260px;			
+	} 	
+	.sub-nav>div.sub-one{
+		width: 532px;
+		background-color: #f5e5ec;
+	}
+	.sub-nav>.sub-one>ul{
+		float: left;
+		width: 260px;
+	}
+	.sub-nav>div.sub-two{
+		width: 266px;
+		padding-right: 150px;		
+	}
+	.sub-nav>.sub-two>ul{
+		float: left;
+		width: 260px;
+	}	
+	.sub-nav>div.sub-three{
+		width: 800px;		
+		margin-left: 150px;
+		background-color: #f5e5ec;
+	}
+	.sub-nav>.sub-three>ul{
+		float: left;
+		width:260px;
+	}
+	.sub-nav>div.sub-four{
+		width: 249px;
+		padding-right: 150px;
+	}
+	.sub-nav>.sub-four>ul{
+		float: left;
+		width:260px;
+	}		
+	.sub-nav>.sub-nav>{
+		height: 260px;
+	}	
+	.sub-five{
+		float:left;
+	}
+	.sub-nav>div.sub-five{
+		width: 1049px;		
+		background-color: #f5e5ec;		
+		margin-left: 300px;
+	}
+	.sub-nav>.sub-five>ul{
+		float: left;
+		width:260px;
+	}
+	.sub-nav>.sub-nav>ul{
+		float: left;
+		width:260px;
+	}
+	.nav {
+		width: 800px;
+		margin: 0 auto;
+		text-align: center;		
+	}
+	.nav > .nav-1 {
+		width: 1349px;
+		margin: 0 auto;
+	}
+	.nav > .nav-1 >li{
+		float: left;
+		width: 100px;
+	}
+	.nav > .nav-2 > li{
+		float:left;
+		width:130px;
+	}
+	.sub-nav {
+		width: 100%;
+		left: 0;
+		position: absolute;
+		background-color: #ffffff;
+		display: none;
+		margin: 0 auto;
+	}
+	.sub-left{
+		width: 250px;
+		padding-left: 150px;
+	}
+	.products{
+		width: 1050px;
+		height: 400px;
+		margin: 0 auto;
+		margin-top: 5px;
+	}
+	.products-1{
+		width: 525px;
+		height: 400px;
+		float: left;
+		background: url(images/quan1.jpg);
+	}
+	.products-2{
+		width: 525px;
+		height: 400px;
+		float: right;
+	}
+	.products-2a{
+		width: 500px;
+		font-size: 30px;
+		font-weight: bold;
+		margin-left: 20px;
+		margin-top: 30px;
+	}
+	.products-2b{
+		width: 30px;
+    	border-top: 1px solid black;
+    	border-width: 4px;
+    	margin-left: 20px;
+    	margin-top: 30px;
+	}
+	.products-2c{
+		width: 500px;
+		font-size: 16px;
+		font-weight: bold;
+		margin-left: 20px;
+		margin-top: 25px;
+	}
+	.products-2d{
+		width: 500px;
+		font-size: 14px;
+		font-weight: bold;
+		margin-left: 20px;
+		margin-top: 25px;
+	}
+	.products-2e{
+		width: 100px;
+		height: 45px;
+		background-color: silver;
+		margin-left: 20px;
+		margin-top: 45px;
+	}
+	.products-2e>ul>li{
+		text-align: center;
+		font-size: 15px;
+		line-height: 45px;
+		color: white;
+	}
+    .products2 {
+    	width: 1050px;
+    	height: 405px;
+    	background-color: silver;
+    	margin: 1em auto;   	
+    }
+    .top{
+    	height:89px;
+    	background-color: silver;
+    } 
+    .top >ul >li{
+    	text-align: center;
+    	line-height: 89px;
+    	font-size: 30px;
+    	font-weight: bold;
+    }
+    .bottom{
+    	height:89px;
+    	background-color: silver;
+    } 
+    .box0>ul>li{
+    	text-align: center;
+    	line-height: 50px;
+    	font-size: 15px;
+    	color: black;
+    }
+    .box0{
+    	width: 158px;
+    	height: 50px;
+    	background-color: #f5e5ec;
+    	margin: 0 auto;
+    }
+    .list{
+    	width:1050px;    	
+    	margin: 0 auto;         
+    }
+    .list>li{
+    	float: left;
+    }    
+    .list::after{
+    	content: "";
+    	clear: both;
+    	display: block;
+    }
+    .nav-box2 {
+    	width: 226px;
+    	height: 226px;    	
+    	margin-left: 20px;
+        background-repeat: no-repeat;
+    }
+    .nav-box3 {
+    	width: 226px;
+    	height: 226px;   	             
+    }
+    .nav-box4 {
+    	width: 226px;
+    	height: 226px;    	   	     		
+    }
+    .nav-box5 {
+    	width: 226px;
+    	height: 226px;	
+    }
+    .products3 {
+    	width: 1050px;
+    	height: 328px;
+    	background: url(images/xiao2.png);
+    	margin: 0 auto;
+    	margin-left: 149px;
+    }
+    .products4 {
+    	width: 100%;
+    	height: 197px;
+    	background-color: #f2f2f2;
+    	margin: 0 auto;
+    	margin-top: 40px;
+    } 
+    .small-1{
+    	width:300px;
+    	height:197px;
+    	float:left;
+    	background-color: #f2f2f2;
+    } 
+    .box-a>ul>li{
+    	text-align: center;
+    	line-height: 20px;
+    	font-size: 10px;
+    	color: black;
+    }
+    .box-a{
+    	width:202px;
+    	height: 20px;
+    	background-color: silver;
+    	margin: 0 auto; 
+    	position: relative;
+    	top: 80px;  	
+    }
+    .small-2{
+    	width: 300px;
+    	height: 197px;
+    	margin-left: 350px;
+    	position: absolute;
+    	background-color: #f2f2f2;
+    }
+    .box-b>ul>li{
+    	text-align: center;
+    	line-height: 30px;
+    	font-size: 10px;
+    	color: black;
+    }
+    .box-b{
+    	width: 280px;
+    	height: 90px; 
+    	margin: 0 auto;
+    	position: relative;
+    	top: 50px;
+    }
+    .box-b-1>ul>li{
+    	text-align: center;
+    	line-height: 20px;
+    	font-size: 10px;
+    	color: black;
+    } 
+    .box-b-1{
+    	width: 180px;
+    	height: 20px;
+    	background-color: silver;
+    	margin: 0 auto;
+    }
+    .small-3{
+    	width: 300px;
+    	height: 197px;
+    	margin-left: 700px;
+    	background-color: #f2f2f2;
+    } 
+    .small-3>ul>li{
+    	text-align:center;
+    	line-height: 11px;
+    	font-size: 10px;
+    	color: black;
+    	position: relative; 
+    	top: 55px;   	
+    }
+    .products5 {
+    	width: 1349px;
+    	height: 60px;
+    	background-color: white;
+    } 
+
+	</style>
+</head>
+<body>
+		<div class="header">
+           <div class="nav">
+           	 <ul class="nav-2">
+           	 	
+           	 		<li><a href="#">联系我们</a></li>
+           	 		<li><a href="#">服务</a></li>
+           	 		<li><a href="#">查找销售网络</a></li>
+           	 		<li><a href="#">400 885 6618</a></li>
+           	 		<li><a href="#">注册与登录</a></li>
+           	 		<li><a href="#">购物袋</a></li>
+           	</ul>          	 
+           </div>
+		</div>
+		<div class="header-logo">
+			
+		</div>
+		<div class="container">
+			<div class="wrap">
+			   <div class="box1">
+			   	<ul class="nav">
+			   		<li><a href="#">珠宝系列</a>
+			   		  <div class="sub-nav">
+					   		 <div class="sub-left">
+					   		 	<ul>
+					   		  		<li><a href="#">非凡杰作</a></li>
+					   		  		<li><a href="#">RESONANCES DE CARTIER系列</a></li>
+					   		  		<li><a href="#">PANTHERE DE CARTIER系列</a></li>
+					   		  		<li><a href="#">动物与植物系列高级珠宝</a></li>
+					   		  		<li><a href="#">TUTTI FRUTTI水果锦囊风格</a></li>
+					   		  		<li><a href="#">雕刻宝石作品</a></li>
+					   		  	</ul>
+					   		 </div>
+					   		 <div class="sub-right">
+					   		  	<ul>
+					   		  		<li><a href="#">系列</a></li>
+					   		  		<li><a href="#">JUSTE UN CLOU系列</a></li>
+					   		  		<li><a href="#">AMULETTE DE CARTIER系列</a></li>
+					   		  		<li><a href="#">LOVE系列</a></li>
+					   		  		<li><a href="#">PANTHERE DE CARTIER系列</a></li>
+					   		  		<li><a href="#">ECROU DE CARTIER系列</a></li>
+					   		  		<li><a href="#">TRINITY系列</a></li>
+					   		  		<li><a href="#">CACIUS DE CARTIER系列</a></li>
+					   		  	</ul>
+					   		  	<ul>
+					   		  		<li><a href="#">类别</a></li>
+					   		  		<li><a href="#">戒指</a></li>
+					   		  		<li><a href="#">手镯</a></li>
+					   		  		<li><a href="#">项链</a></li>
+					   		  		<li><a href="#">耳环</a></li>
+					   		  		<li><a href="#">胸针</a></li>
+					   		  	</ul>
+					   		  	<ul>
+					   		  		<li><a href="#">礼物</a></li>
+					   		  		<li><a href="#">卓尔不凡的钻石</a></li>
+					   		  		<li><a href="#">卡地亚最新珠宝系列</a></li>
+					   		  		<li><a href="#">卡地亚经典珠宝</a></li>
+					   		  		<li><a href="#">卡地亚作品目录</a></li>
+					   		  	</ul>
+					   	     </div>
+			   		  </div>
+			   		</li>
+			   		<li><a href="#">腕表系列</a>
+			   		 <div class="sub-nav">
+			   		  <div class="sub-left">
+			   		   <ul>
+			   		   	<li><a href="#">超凡作品</a></li>
+			   		   	<li><a href="#">卡地亚于日内瓦国际高级钟表展呈献腕表杰作</a></li>
+			   		   </ul>			   		  	
+			   		  </div>
+			   		  <div class="sub-right">
+			   		  <ul>
+			   		  	<li><a href="#">男士腕表</a></li>
+			   		  	<li><a href="#">SANTOS DE CARTIER系列</a></li>
+			   		  	<li><a href="#">DRIVE DE CARTIER腕表</a></li>
+			   		  	<li><a href="#">TANK腕表</a></li>
+			   		  	<li><a href="#">BALLON BLEU DE CARTIER腕表</a></li>
+			   		  	<li><a href="#">CLE DE CARTIER<腕表/a></li>
+			   		  	<li><a href="#">CALIBRE DE CARTIER腕表</a></li>
+			   		  	<li><a href="#">ROTONDE DE CARTIER腕表</a></li>
+			   	      </ul>
+			   	      <ul>
+			   	      	<li><a href="#">女士腕表</a></li>
+			   	      	<li><a href="#">PANTHERE DE CARTIER腕表</a></li>
+			   	      	<li><a href="#">TANK腕表</a></li>
+			   	      	<li><a href="#">BALLON BLEU DE CARTIER腕表</a></li>
+			   	      	<li><a href="#">CLE DE CARTIER腕表</a></li>
+			   	      	<li><a href="#">HYPNOSE系列</a></li>
+			   	      	<li><a href="#">BALLON BLANC DE CARTIER腕表</a></li>
+			   	      	<li><a href="#">BAIGNOIRE腕表</a></li>
+			   	      </ul>
+			   	      <ul>
+			   	      	<li><a href="#">礼物</a></li>
+			   	      	<li><a href="#">新品</a></li>
+			   	      	<li><a href="#">表带设置</a></li>
+			   	      	<li><a href="#">卡地亚经典腕表</a></li>
+			   	      	<li><a href="#">卡地亚作品目录</a></li>
+			   	      </ul>
+			   		  </div>			   					   		   		     </div>			   		 				   		 
+			   		</li>
+			   		<li><a href="#">婚礼系列</a>
+			   		 <div class="sub-nav">
+			   		  <div class="sub-left">
+			   		   <ul>
+			   		   	 <li><a href="#">钻石传奇</a></li>
+			   		   	 <li><a href="#">只属于你-卡地亚尊享定制服务</a></li>
+			   		   	 <li><a href="#">卡地亚钻石</a></li>
+			   		   	 <li><a href="#">钻石系列</a></li>
+			   		   </ul>			   		  	
+			   		  </div>
+                         <div class="sub-one">
+                         	<ul>
+                         		<li><a href="#">订婚钻戒</a></li>
+                         		<li><a href="#">SOLITAIRE 1895系列</a></li>
+                         		<li><a href="#">CARTIER DESTINEE系列</a></li>
+                                <li><a href="#">ETINCELLE DE CARTIER系列</a></li>
+                                <li><a href="#">TRINITY RUBAN系列</a></li>
+                                <li><a href="#">BALLERINE系列</a></li>
+                                <li><a href="#">LOVE系列</a></li>
+                         	</ul>
+                         	<ul>
+                         		<li><a href="#">结婚对戒</a></li>
+                         		<li><a href="#">1895系列</a></li>
+                         		<li><a href="#">C DE CARTIER系列</a></li>
+                         		<li><a href="#">ETINCELLE DE CARTIER系列</a></li>
+                         		<li><a href="#">CARTIER D'AMOUR系列</a></li>
+                         		<li><a href="#">BALLERINE系列</a></li>
+                         		<li><a href="#">LOVE系列</a></li>
+                         		<li><a href="#">TRINITY RUBAN系列</a></li>
+                         	</ul>
+                         </div>
+                         <div class="sub-two">
+                         	<ul>
+                         		<li><a href="#">礼物</a></li>
+                         		<li><a href="#">卡地亚女士订婚礼物</a></li>
+                         		<li><a href="#">卡地亚男式订婚礼物</a></li>
+                         		<li><a href="#">DAILY DIAMONDS系列</a></li>
+                         	</ul>
+                         </div>
+			   		 </div>
+			   		</li>
+			   		<li><a href="#">皮具&配件系列</a>
+			   		 <div class="sub-nav">
+			   		 	<div class="sub-three">
+			   		 		<ul>
+			   		 			<li><a href="#">皮具</a></li>
+			   		 			<li><a href="#">非凡杰作</a></li>
+			   		 			<li><a href="#">送给她的手袋</a></li>
+                                <li><a href="#">送给他的手提包</a></li>
+			   		 			<li><a href="#">小皮具</a></li>
+			   		 			<li><a href="#">男士小皮具</a></li>
+			   		 			<li><a href="#">男士皮带</a></li>
+			   		 			<li><a href="#">女士皮带</a></li>
+			   		 		</ul>
+			   		 		<ul>
+			   		 			<li><a href="#">眼镜</a></li>
+			   		 			<li><a href="#">女士太阳眼镜</a></li>
+			   		 			<li><a href="#">男士太阳眼镜</a></li>
+			   		 		</ul>
+			   		 		<ul>
+			   		 			<li><a href="#">配件系列</a></li>
+			   		 			<li><a href="#">超凡作品</a></li>
+			   		 			<li><a href="#">书写工具</a></li>
+			   		 			<li><a href="#">袖扣</a></li>
+			   		 			<li><a href="#">丝巾</a></li>
+			   		 			<li><a href="#">打火机</a></li>
+                                <li><a href="#">钥匙扣</a></li>
+			   		 			<li><a href="#">钞票夹</a></li>
+			   		 		</ul>
+			   		 	</div>
+			   		 	<div class="sub-four">
+			   		 		<ul>
+			   		 			<li><a href="#">礼物</a></li>
+			   		 			<li><a href="#">卡地亚经典配饰</a></li>
+			   		 		</ul>
+			   		 	</div>
+			   		 </div>
+			   		</li>
+			   		<li><a href="#">香水系列</a>
+			   		<div class="sub-nav">
+			   			<div class="sub-left">
+			   				<ul>
+			   					<li><a href="#">超凡作品</a></li>
+			   					<li><a href="#">LES HEURES DE PARFUM系列</a></li>
+			   					<li><a href="#">香水宣言</a></li>
+			   				</ul>
+			   			</div>
+			   			<div class="sub-one">
+			   				<ul>
+			   					<li><a href="#">女士香水</a></li>
+			   					<li><a href="#">CARAT系列</a></li>
+			   					<li><a href="#">LA PANTHERE系列</a></li>
+			   					<li><a href="#">BAISER VOLE系列</a></li>
+			   					<li><a href="#">LES HEURES DE PARFUM系列</a></li>
+			   					<li><a href="#">LES HEURES VOYAGEUSES系列</a></li>
+			   					<li><a href="#">EAU DE CARTIER系列</a></li>
+			   					<li><a href="#">DELICES DE CARTIER</a></li>
+			   				</ul>
+			   				<ul>
+			   					<li><a href="#">男士香水</a></li>
+			   					<li><a href="#">L'ENYOL DE CARTIER系列</a></li>
+			   					<li><a href="#">DECLARATION系列</a></li>
+			   					<li><a href="#">DECLARATION D'UM系列 SOIR</a></li>
+			   					<li><a href="#">PASHA DE CARTIER系列</a></li>
+			   					<li><a href="#">EAU DE CARTIER系列</a></li>
+			   					<li><a href="#">SANTOS DE CARTIER系列</a></li>
+			   					<li><a href="#">LES HEURES DE PARFUMS系列</a></li>
+			   				</ul>
+			   			</div>
+			   			<div class="sub-two">
+			   				<ul>
+			   					<li><a href="#">1</a>礼物</li>
+			   					<li><a href="#"></a>FRAGRANCE GIFT SETS</li>
+			   				</ul>
+			   			</div>
+			   		</div>
+			   		</li>
+			   		<li><a href="#">礼物</a>
+			   		<div class="sub-nav">			   		   
+			   			<div class="sub-five">
+			   				<ul>
+			   					<li><a href="#">个性化服务</a></li>
+			   					<li><a href="#">作品携刻</a></li>
+			   					<li><a href="#">定制您的皮质作品</a></li>
+			   					<li><a href="#">定制您的腕表</a></li>
+			   					<li><a href="#">表带设置</a></li>
+			   					<li><a href="#">定制您的AMULETTE作品</a></li>
+			   				</ul>
+			   				<ul>
+			   					<li><a href="#">送给她</a></li>
+			   					<li><a href="#">卡地亚女士K金珠宝与K金腕表</a></li>
+			   					<li><a href="#">卡地亚粉色或18K玫瑰金女士礼物</a></li>
+			   					<li><a href="#">卡地亚红色女士礼物</a></li>
+			   					<li><a href="#">夏日女士礼品</a></li>
+			   					<li><a href="#">母亲节女士礼物</a></li>
+			   				</ul>
+			   				<ul>
+			   					<li><a href="#">送给他</a></li>
+			   					<li><a href="#">男士不羁魅力</a></li>
+			   					<li><a href="#">卡地亚黑色及白色男士礼物</a></li>
+			   					<li><a href="#">隽永的优雅气度</a></li>
+			   					<li><a href="#">父亲节男士礼物</a></li>
+			   					<li><a href="#">夏日男士礼品</a></li>
+			   				</ul>
+			   				<ul>
+			   					<li><a href="#">礼物</a></li>
+			   					<li><a href="#">七夕情人节挚爱之礼</a></li>
+			   					<li><a href="#">夏日迷人之选</a></li>
+			   					<li><a href="#">魅力缱绻</a></li>
+			   					<li><a href="#">SANTOS DE CARTIER精选作品</a></li>
+			   					<li><a href="#">购买全新作品</a></li>
+			   					<li><a href="#">浪漫时光，让爱加叠</a></li>
+			   					<li><a href="#">珠宝新品</a></li>
+			   				</ul>
+			   			</div>
+			   		</div>
+			   		</li>
+			   		<li><a href="#">品牌</a></li>
+			   	</ul>
+			   </div>			  
+			   </div>
+			   <div class="banner-1">
+			   	
+			   </div>
+			</div>
+			<div class="products">
+				<div class="products-1"></div>
+				<div class="products-2">
+					<div class="products-2a">
+						<ul><li>全新JUSTE UN CLOU玫瑰金手镯</li></ul>
+					</div>
+					<div class="products-2b"></div>
+                    <div class="products-2c">
+						<ul><li>中国线上独家首发</li></ul>
+					</div>
+					<div class="products-2d">
+						<ul><li>Juste un Clou系列手镯新作精致时尚，佩戴更显简易灵活。</li></ul>
+					</div>
+					<div class="products-2e">
+						<ul>
+						<li><a href="#">选购</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="products2">	
+				<div class="top">
+					<ul>
+						<li>金质魅力风范</li>
+					</ul>
+				</div>
+				<ul class="list">
+					<li><a href=""><img src="images/jin1.png" alt=""></a></li>
+					<li><a href=""><img src="images/jin2.png" alt=""></a></li>
+					<li><a href=""><img src="images/jn3.png" alt=""></a></li>
+					<li><a href=""><img src="images/jin4.png" alt=""></a></li>
+			    </ul>				
+				<div class="bottom">
+				<div class="box0">
+					<ul>
+						<li>选购精选作品</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div class="products3">
+				
+			</div>
+			<div class="products4">
+			<div class="wrap">
+			 <div class="small-1">
+				<div class="box-a">
+					<ul>
+						<li>请选择您的国家/地区</li>
+					</ul>
+				</div>
+			</div>
+		    <div class="small-2">
+				<div class="box-b">
+					<ul>
+						<li><a href="#">新闻刊物</a></li>
+						<li><a href="#">探索卡地亚最新资讯</a></li>
+					</ul>
+				 <div class="box-b-1">
+				 	<ul>
+				 		<li>订阅</li>
+				 	</ul>
+				 </div>
+				</div>
+			</div>
+			<div class="small-3">
+				<ul>
+					<li><a href="#">关注我们</a></li>
+					<li><a href="#">FondationCarlier</a></li>
+					<li><a href="#">pour'Fart contermporain</a></li>
+				</ul>
+			</div>
+			</div>
+			</div>	
+			<div class="products5">
+				<div class="nav">
+				 <ul class="nav-1">
+					<li><a href="#">400 886 6618</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">使用条款</a></li>
+					<li><a href="#">网站地图</a></li>
+					<li><a href="#">工作机会</a></li>
+					<li><a href="#">鸣谢</a></li>
+					<li><a href="#">隐私声明</a></li>
+					<li><a href="#">销售条款</a></li>
+					<li><a href="#">沪公网安备</a></li>
+				</ul>					
+				</div>									
+			</div>
+	    </div>	
+</body>
+</html>
