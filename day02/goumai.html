@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购买商品</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+	  .header{
+	  	width: 100%;
+	  	height: 40px;
+	  	background-color: #f2f2f2;
+	  }	
+	  .wrap{
+	  	margin: 0 auto;
+	  	width: 1050px;
+	  }
+	  .nav::after{
+	  	content:"";
+	  	display: block;
+	  	clear: both;
+	  }
+	  .nav>li{
+	  	float:left;
+		text-align: center;
+	    height: 3em;
+		font-size: 10px;
+		position: relative;
+		top: 10px;
+		margin-left: 360px;
+	  }
+	  .box{
+	  	width: 1050px;
+	  	height: 650px;
+	  	margin: 0 auto;
+	  }
+	  .products-a{
+	  	width: 523px;
+	  	height: 650px;
+	  	float: left;
+	  }
+	  .products-a-1{
+	  	width: 240px;
+	  	height: 106px;
+	  	background: url(images/jie1.png);
+	  	margin: 0 auto;
+	  	margin-top: 132px;
+	  }
+	  .products-a-2{
+	  	width: 40px;
+	  	height: 40px;
+	  	margin: 0 auto;
+	  	background: url(images/jie2.png);
+	  	float: left;
+        margin-left: 230px;
+        margin-top: 120px;
+	  }
+	  .products-b{
+	  	width: 523px;
+	  	height: 650px;
+	  	float: left;
+	  }
+	   .products-b-1{
+	  	width: 330px;
+	  	height: 40px;
+	  	margin-left: 95px;
+	  	margin-top: 80px;
+	  }
+	  .products-b-1>ul>li{
+	  	text-align: center;
+	  	font-size: 20px;
+	  	font-weight: bold;
+	  	line-height: 40px;
+	  }
+	   .products-b-2{
+	  	width: 80px;
+	  	height: 30px;
+	  	margin-left: 220px;
+	  	margin-top: 10px;
+	  }
+	  .products-b-2>ul>li{
+	  	text-align: center;
+	  	font-size: 10px;
+	  	color: #a0acc2;
+	  	line-height: 30px;
+	  }
+	   .products-b-3{
+	  	width: 140px;
+	  	height: 20px;
+	  	margin-left: 190px;
+	  	margin-top: 20px;
+	  }
+	  .products-b-3>ul>li{
+	  	text-align: center;
+	  	font-size: 8px;
+	  	color: red;
+	  	line-height: 20px;
+	  }
+	  .products-b-4{
+	  	width: 130px;
+	  	height: 40px;
+	  	margin-left: 195px;
+	  	margin-top: 20px;
+	  }
+	  .products-b-4>ul>li{
+	  	text-align: center;
+	  	font-size: 22px;	  	
+	  	line-height: 40px;
+	  }
+	  .products-b-5{
+	  	width: 360px;
+	  	height: 30px;
+	  	margin-left: 80px;
+	  	margin-top: 20px;
+	  }
+	  .b-5a{
+	  	width: 120px;
+	  	height: 30px;
+	  	float: left;
+	  	border: 1px solid black; 
+	  	margin-left: 50px;
+	  }
+	  .b-5a>ul>li{
+        text-align: center;
+        font-size: 8px;
+        line-height: 30px;
+	  }
+	  .b-5b{
+	  	width: 120px;
+	  	height: 30px;
+	  	float: right;
+	  	border: 1px solid black;
+	  	margin-right: 50px; 
+	  }
+	  .b-5b>ul>li{
+        text-align: center;
+        font-size: 8px;
+        line-height: 30px;
+	  }
+	  .products-b-6{
+	  	width: 260px;
+	  	height: 40px;
+	  	margin: 0 auto;
+	  	margin-top: 10px;
+	  	background-color: #c31515;
+	  }
+	  .products-b-6>ul>li{
+	  	text-align: center;
+	  	line-height: 40px;
+	  	color: white;
+	  	font-size: 14px;
+	  }
+	  .products-b-7{
+	  	width: 260px;
+	  	height: 20px;
+	  	margin: 0 auto;
+	  	margin-top: 10px;
+	  }
+	  .products-b-7>ul>li{
+	  	text-align: center;
+	  	line-height: 20px;/
+	  	font-size: 8px;
+	  	font-weight: bold;
+	  }
+	   .products-b-8{
+	  	width: 260px;
+	  	height: 20px;
+	  	margin: 0 auto;
+	  	margin-top: 10px;
+	  }
+	  .products-b-8>ul>li{
+	  	text-align: center;
+	  	line-height: 20px;
+	  	color: red;
+	  	font-size: 8px;
+	  }
+	   .products-b-9{
+	  	width: 260px;
+	  	height: 30px;
+	  	margin: 0 auto;
+	  	margin-top: 10px;
+	  	background-color: #f2f2f2;
+	  }
+	  .products-b-9>ul>li{
+	  	text-align: center;
+	  	line-height: 30px;
+	  	font-size: 10px;
+	  }
+	   .products-b-10{
+	  	width: 260px;
+	  	height: 30px;
+	  	margin: 0 auto;
+	  	margin-top: 10px;
+	  	background-color: #f2f2f2;
+	  }
+	  .products-b-10>ul>li{
+	  	text-align: center;
+	  	line-height: 30px;
+	  	font-size: 10px;
+	  }
+	   .products-b-11{
+	  	width: 260px;
+	  	height: 30px;
+	  	margin: 0 auto;
+	  	margin-top: 10px;
+	  	background-color: #f2f2f2;
+	  }
+	  .products-b-11>ul>li{
+	  	text-align: center;
+	  	line-height: 30px;
+	  	font-size: 10px;
+	  }
+	  .bottom{
+	  	width: 100%;
+	  	height: 250px;
+	  	background-color: #f2f2f2;
+	  	overflow-y: hidden;
+	  }
+	  .bottom1{
+	  	margin-left: 150px;
+	  	width: 525px;
+	  	height: 250px;
+	  	padding-top: 45px;
+	  }
+	  .bottom2{
+	  	width: 386px;
+    	border-top: 1px solid black;
+    	margin-left: 69px;
+	  }
+	  .bottom3>ul>li{
+	  	float: left;
+	  	margin-left: 69px;
+	  	margin-top: 15px;
+	  }
+	   .bottom4>ul>li{
+	  	margin-left: 69px;
+	  	margin-top: 50px;
+	  	font-size: 8px;
+	  	font-weight: bold;
+	  }
+      .bottom5{
+	  	width: 386px;
+    	border-top: 1px solid black;
+    	margin-left: 69px;
+    	margin-top: 20px;
+	  }
+	   .bottom6>ul>li{
+	  	margin-left: 69px;
+	  	margin-top: 20px;
+	  	font-size: 16px;
+	  }
+	   .bottom7{
+	  	width: 386px;
+    	border-top: 1px solid black;
+    	margin-left: 69px;
+    	margin-top: 20px;
+	  }
+	</style>
+</head>
+<body>
+    <div class="container">
+	<div class="header">
+	<div class="wrap">
+		<ul class="nav">
+			<li><a href="">系列/珠宝系列/精选珠宝作品/18k白金戒指/LOGO DE CARTIER结婚对戒</a></li>
+		</ul>
+	</div>
+	</div>
+	</div>
+	<div class="box">
+	<div class="products-a">
+	  <div class="products-a-1"></div>
+	  <div class="products-a-2"></div>
+	</div>
+	<div class="products-b">
+		<div class="products-b-1">
+			<ul><li>LOGO DE GARTIER结婚对戒</li></ul>
+		</div>
+		<div class="products-b-2">
+			<ul><li>18k白金</li></ul>
+		</div>
+		<div class="products-b-3">
+			<ul><li>型号：B4050900</li></ul>
+		</div>
+		<div class="products-b-4">
+			<ul><li>$8,000</li></ul>
+		</div>
+		<div class="products-b-5">
+			<div class="b-5a">
+				<ul><li>大小</li></ul>
+			</div>
+			<div class="b-5b">
+				<ul><li>尺寸指南</li></ul>
+			</div>
+		</div>
+		<div class="products-b-6">
+			<ul><li>添加至购物袋</li></ul>
+		</div>
+		<div class="products-b-7">
+			<ul><li>以电话订购</li></ul>
+		</div>
+		<div class="products-b-8">
+			<ul><li>400 885 6618</li></ul>
+		</div>
+		<div class="products-b-9">
+			<ul><li>携刻</li></ul>
+		</div>
+		<div class="products-b-10">
+			<ul><li>联系销售顾问</li></ul>
+		</div>
+		<div class="products-b-11">
+			<ul><li>预约</li></ul>
+		</div>
+	</div>
+	</div>
+	<div class="bottom">
+		<div class="bottom1">
+			<div class="bottom2"></div>
+			<div class="bottom3">
+				<ul><li>作品详情</li></ul>
+			</div>
+			<div class="bottom4">
+				<ul><li>Logo de Cartier戒指，18k白金</li></ul>
+			</div>
+			<div class="bottom5"></div>
+			<div class="bottom6">
+				<ul><li>关于作品系列</li></ul>
+			</div>
+            <div class="bottom7"></div>
+		</div>
+	</div>
+</body>
+</html>
