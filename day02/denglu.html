@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+	.head{
+		width: 100%;
+		height: 40px;
+		background-color: #f5e5ec;
+	}
+	.nav::after{
+		content:"";
+		display: block;
+		clear: both;
+	}
+	.nav>li{
+		float:left;
+		text-align: center;
+	    height: 3em;
+		font-size: 10px;
+		position: relative;
+		top: 10px;
+		margin-left: 400px;
+	}
+    .wrap{
+    	margin: 0 auto;
+    	width: 980px;
+    }
+    .products{
+    	width: 980px;
+    	height: 120px;   	
+    	margin-left: 184px;
+    }
+    .products>ul>li{
+    	text-align: center;
+    	font-size: 40px;
+    	position: relative;
+    	top: 40px;
+
+    }
+    .box{
+    	width: 980px;
+    	height: 837px;   	
+    	margin-left: 184px; 
+    	border: 1px solid black;  	
+    }
+    .box-1{
+    	width: 490px;
+    	height: 800px;   	
+    	border-right: 1px solid black;
+    	margin-top: 15px;
+        float: left;
+    }
+    .box-1-a{
+    	width: 430px;
+    	height: 18px;    	
+    	margin-left: 30px;
+    }
+    .box-1-a>ul>li{
+    	text-align: center;
+    	color:  #a0acc2;    	
+    }
+    .box-1-b{
+    	width: 430px;
+    	height: 18px;
+    	margin-top: 15px;
+    	margin-left: 30px;
+    }
+    .box-1-b>ul>li{       
+        color: #a0acc2;
+    }
+    .box-1-c{
+    	width: 430px;
+    	border-height: 1px;
+    	border-top: 1px solid black;   	
+    	margin-top: 25px;   	
+    	margin-left: 30px;
+    }
+    .box-1-d{
+        width:430px;
+        height: 18px;
+        margin-left:30px;
+        margin-top:40px; 
+    }
+    .box-1-d>ul>li{
+    	color: #a0acc2;
+    	font-weight: bold;
+    }
+    .box-1-e{
+    	width: 430px;
+    	height: 25px;
+    	border: 1px solid black;   	
+    	margin-top: 15px;   	
+    	margin-left: 30px;
+    	background-color: #f2f2f2;
+    }
+    .box-1-f{
+        width:430px;
+        height: 18px;
+        margin-left:30px;
+        margin-top:40px; 
+    }
+    .box-1-f>ul>li{
+        color: #a0acc2;
+        font-weight: bold;
+    }
+    .box-1-g{
+        width: 430px;
+        height: 25px;
+        border: 1px solid black;    
+        margin-top: 15px;       
+        margin-left: 30px;
+        background-color: #f2f2f2;
+    }
+     .box-1-h{
+        width: 430px;
+        height: 18px;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+    .box-1-h>ul>li{       
+        color: #a0acc2;
+       float: right;
+    }
+    .box-1-i{
+        width: 430px;
+        border-height: 1px;
+        border-top: 1px solid black;    
+        margin-top: 15px;       
+        margin-left: 30px;
+    }
+     .box-1-j{
+        width: 430px;
+        height: 18px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .box-1-j>ul>li{       
+        color: #a0acc2;
+       float: left;
+    }
+    .one-1-k{
+        width: 80px;
+        height: 35px;
+        margin: 0 auto;
+        margin-top: 30px;
+        background-color: #c31515;
+    }
+    .one-1-k>ul>li{
+        text-align: center;
+        font-size: 20px;
+        color: #a0acc2;
+        position: relative;
+        top: 8px;
+        font-weight: bold;
+        line-height: 25px;
+    }
+    .one{
+        width: 430px;
+        height: 35px;
+        margin-left: 35px;
+        margin-top: 5px;
+    }
+    .one-1{
+        width: 70px;
+        height: 35px;
+        float: left;       
+    }
+    .one-2{
+        width: 60px;
+        height: 35px;
+        background-color: #f2f2f2;
+        margin-left: 100px; 
+        border: 1px solid black;              
+    }
+    .one-2>ul>li{
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    .one-3{
+        width: 160px;
+        height: 35px;
+        background-color: #f2f2f2;        
+        float: right;
+        position: relative;
+        top: -35px;
+        border: 1px solid black;
+    }
+    .box-2{
+       width: 480px;
+       height: 800px;          
+       float:right; 
+       margin-right: 4px;  
+       margin-top: 15px;           
+    }
+    .box-2-a{
+        width: 430px;
+        height: 50px;       
+        margin-left: 30px;
+    }
+    .box-2-a{
+        text-align: center;
+        color: #a0acc2;
+        font-size: 35px;
+    }
+    .box-2-b{
+       width: 430px;
+        height: 18px;
+        margin-top: 10px;
+        margin-left: 38px; 
+    }
+    .box-2-b>ul>li{       
+        color: #a0acc2;
+    }
+    .box-2-c{
+       width: 430px;
+       height: 18px;
+       margin-top: 10px;
+       margin-left: 28px; 
+    }
+    .box-2-c>ul>li{       
+        color: #a0acc2;
+        text-align: center;
+        font-size: 10px;
+    }
+     .box-2-d{
+        width:430px;
+        height: 42px;
+        margin-left:30px;
+        margin-top: 10px;           
+    }
+    .box-2-d>ul>li{
+        color: #a0acc2;
+        font-size: 10px;
+    }
+    .box-2-dd{
+        width:430px;
+        height: 20px;
+        margin-bottom: 0;
+    }
+    .box-2-dd>ul>li{
+        float: left;
+    }
+    .box-2-e{
+        width:430px;
+        height: 18px;
+        margin-left:30px;
+        margin-top:10px; 
+    }
+    .box-2-e>ul>li{
+        color: #a0acc2;
+        font-weight: bold;
+    }
+    .box-2-f{
+        width: 430px;
+        height: 25px;
+        border: 1px solid black;    
+        margin-top: 15px;       
+        margin-left: 30px;
+        background-color: #f2f2f2;
+    }
+    .box-2-g{
+        width:430px;
+        height: 18px;
+        margin-left:30px;
+        margin-top:10px; 
+    }
+    .box-2-g>ul>li{
+        color: #a0acc2;
+        font-weight: bold;
+    }
+    .box-2-h{
+        width: 430px;
+        height: 25px;
+        border: 1px solid black;    
+        margin-top: 10px;       
+        margin-left: 30px;
+        background-color: #f2f2f2;
+    }
+    .box-2-i{
+        width:430px;
+        height: 18px;
+        margin-left:8px;
+        margin-top: 10px; 
+    }
+    .box-2-i>ul>li{
+        color: #a0acc2;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    .box-2-j{
+        width: 430px;
+        height: 25px;
+        border: 1px solid black;    
+        margin-top: 8px;       
+        margin-left: 30px;
+        background-color: #f2f2f2;
+    }
+    .box-2-k{
+        width:430px;
+        height: 18px;
+        margin-left:8px;
+        margin-top: 10px; 
+    }
+    .box-2-k>ul>li{
+        color: #a0acc2;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    .box-2-l{
+        width: 430px;
+        height: 25px;
+        border: 1px solid black;    
+        margin-top: 8px;       
+        margin-left: 30px;
+        background-color: #f2f2f2;
+    }
+    .box-2-m{
+        width:430px;
+        height: 18px;
+        margin-left:8px;
+        margin-top: 10px; 
+    }
+    .box-2-m>ul>li{
+        color: #a0acc2;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    .box-2-n{
+        width: 430px;
+        height: 25px;
+        border: 1px solid black;    
+        margin-top: 8px;       
+        margin-left: 30px;
+        background-color: #f2f2f2;
+    }
+    .box-2-o{
+        width:430px;
+        height: 18px;
+        margin-left:8px;
+        margin-top: 10px; 
+    }
+    .box-2-o>ul>li{
+        color: #a0acc2;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    .box-2-p{
+        width: 430px;
+        height: 25px;
+        border: 1px solid black;    
+        margin-top: 8px;       
+        margin-left: 30px;
+        background-color: #f2f2f2;
+    }
+     .box-2-q{
+        width: 430px;
+        height: 18px;
+        margin-top: 8px;
+        margin-left: 30px;
+    }
+    .box-2-q>ul>li{       
+        color: #a0acc2;
+       float: left;
+    }
+    .two{
+        width: 430px;
+        height: 35px;
+        margin-left: 35px;
+        margin-top: 5px;
+    }
+    .two-1{
+        width: 70px;
+        height: 35px;
+        float: left;       
+    }
+    .two-2{
+        width: 60px;
+        height: 35px;
+        background-color: #f2f2f2;
+        margin-left: 100px; 
+        border: 1px solid black;              
+    }
+    .two-2>ul>li{
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 35px;
+    }
+    .two-3{
+        width: 160px;
+        height: 35px;
+        background-color: #f2f2f2;        
+        float: right;
+        position: relative;
+        top: -35px;
+        border: 1px solid black;
+    }
+    .word-1{
+        width: 432px;
+        height: 25px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-left: 32px;
+    }
+    .word-1a{
+        width: 25px;
+        height: 25px;
+        float: left;
+        background-color: #f5e5ec;
+    }
+    .word-1b{
+        width: 200px;
+        height: 28px;
+        margin-left: 80px;
+        position: relative;
+        top: -28px;
+    }
+    .word-1b>ul>li{
+        text-align: center;
+        color: #a0acc2;
+        font-weight: bold;
+    }
+     .word-2{
+        width: 432px;
+        height: 25px;
+        margin: 0 auto;
+        margin-left: 32px;
+    }
+    .word-2a{
+        width: 25px;
+        height: 25px;
+        float: left;
+        background-color: #f5e5ec;
+    }
+    .word-2b{
+        width: 200px;
+        height: 28px;
+        margin-left: 70px;
+        position: relative;
+        top: -28px;
+    }
+    .word-2b>ul>li{
+        text-align: center;
+        color: #a0acc2;
+        font-weight: bold;
+    }
+    .last{
+        width: 150px;
+        height: 35px;
+        background-color: #c31515;
+        margin: 0 auto;
+    }
+    .last>ul>li{
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+        line-height: 35px;
+    }
+	</style>
+</head>
+<body>
+    <div class="container">
+	<div class="head">
+	<div class="wrap">
+		<ul class="nav">
+			<li><a href="#">服务/我的卡地亚/USER PAGES</a></li>			
+		</ul>
+	</div>
+	</div>
+	</div>
+	<div class="products">
+		<ul>
+			<li>登录</li>
+		</ul>
+	</div>
+	<div class="box">
+		<div class="box-1">
+			<div class="box-1-a">
+				<ul>
+					<li>已注册？</li>
+				</ul>
+			</div>
+			<div class="box-1-b">
+				<ul>
+					<li>您已与卡地亚注册，请在此登录:</li>
+				</ul>
+			</div>
+			<div class="box-1-c"></div>
+			<div class="box-1-d">
+				<ul>
+					<li>电邮*</li>
+				</ul>
+			</div>
+			<div class="box-1-e"></div>
+            <div class="box-1-f">
+                <ul>
+                    <li>密码*</li>
+                </ul>
+            </div>
+            <div class="box-1-g"></div>
+            <div class="box-1-h">
+                <ul>
+                    <li>忘记密码？</li>
+                </ul>
+            </div>
+            <div class="box-1-i"></div>
+            <div class="box-1-j">
+                <ul>
+                    <li>字词验证*</li>
+                </ul>
+            </div>
+            <div class="one">
+                <div>
+                    <ul class="one-1">
+                        <li><a href="#"><img src="images/yan.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="one-2">
+                    <ul>
+                        <li>Refresh</li>
+                    </ul>
+                </div>
+                <div class="one-3">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>                
+            </div>
+            <div class="one-1-k">
+                <ul>
+                    <li><a href="#">登录</a></li>
+                </ul>
+            </div>
+		</div>
+        <div class="box-2">
+            <div class="box-2-a">
+                <ul>
+                    <li>建立您的账户</li>
+                </ul>
+            </div>
+            <div class="box-2-b">
+                <ul>
+                    <li>您可以在此空间内管理您的个人信息，最新信息和新闻刊物</li>
+                </ul>
+            </div>
+            <div class="box-2-c">
+                <ul>
+                    <li>所有项目均为必需所填</li>
+                </ul>
+            </div>
+            <div class="box-2-d">
+                <ul>
+                    <li>称谓*</li>
+                </ul>
+                <div class="box-2-dd">
+                    <ul>
+                        <li>*女士</li>
+                        <li>*男士</li>
+                        <li>*小姐</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-2-e">
+                <ul><li>姓名（拼音）</li></ul>
+            </div>
+            <div class="box-2-f"></div>
+             <div class="box-2-g">
+                <ul><li>姓名（拼音）</li></ul>
+            </div>
+            <div class="box-2-h"></div>
+            <div class="box-2-i">
+                <ul><li>电子邮箱*</li></ul>
+            </div>
+            <div class="box-2-j"></div>
+            <div class="box-2-k">
+                <ul><li>确认电子邮箱*</li></ul>
+            </div>
+            <div class="box-2-l"></div>
+            <div class="box-2-m">
+                <ul><li>密码*</li></ul>
+            </div>
+            <div class="box-2-n"></div>
+            <div class="box-2-o">
+                <ul><li>确认密码*</li></ul>
+            </div>
+            <div class="box-2-p"></div>
+            <div class="box-2-q">
+                <ul>
+                    <li>字词验证*</li>
+                </ul>
+            </div>
+            <div class="two">
+                <div>
+                    <ul class="two-1">
+                        <li><a href="#"><img src="images/yan.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="two-2">
+                    <ul>
+                        <li>Refresh</li>
+                    </ul>
+                </div>
+                <div class="two-3">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>                
+            </div>
+            <div class="word-1">
+                 <div class="word-1a"></div>
+            </div>
+            <div class="word-1b">
+                <ul><li>我希望收到卡地亚的线上通讯</li></ul>
+            </div>
+            <div class="word-2">
+                 <div class="word-2a"></div>
+            </div>
+            <div class="word-2b">
+                <ul><li>我已阅读并接受隐私声明*</li></ul>
+            </div>
+            <div class="last">
+                <ul><li>建立我的账户</li></ul>
+            </div>
+        </div>
+	</div>
+	
+</body>
+</html>
